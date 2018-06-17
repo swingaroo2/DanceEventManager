@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAC20D499D700251C1C /* AppDelegate.swift */; };
-		92756EAF20D499D700251C1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAE20D499D700251C1C /* ViewController.swift */; };
+		92756EAF20D499D700251C1C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAE20D499D700251C1C /* LoginVC.swift */; };
 		92756EB220D499D700251C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
 		92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92756EB320D499D700251C1C /* DanceEventManager.xcdatamodeld */; };
 		92756EB720D499D700251C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB620D499D700251C1C /* Assets.xcassets */; };
 		92756EBA20D499D700251C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB820D499D700251C1C /* LaunchScreen.storyboard */; };
 		92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EC420D499D700251C1C /* DanceEventManagerTests.swift */; };
 		92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */; };
+		92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
+		92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
+		92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		92756EA920D499D700251C1C /* DanceEventManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceEventManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92756EAC20D499D700251C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92756EAE20D499D700251C1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92756EAE20D499D700251C1C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		92756EB120D499D700251C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92756EB420D499D700251C1C /* DanceEventManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DanceEventManager.xcdatamodel; sourceTree = "<group>"; };
 		92756EB620D499D700251C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		92756ECB20D499D700251C1C /* DanceEventManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceEventManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceEventManagerUITests.swift; sourceTree = "<group>"; };
 		92756ED120D499D700251C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92756EE120D55EBE00251C1C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,10 @@
 		92756EAB20D499D700251C1C /* DanceEventManager */ = {
 			isa = PBXGroup;
 			children = (
-				92756EAC20D499D700251C1C /* AppDelegate.swift */,
-				92756EAE20D499D700251C1C /* ViewController.swift */,
-				92756EB020D499D700251C1C /* Main.storyboard */,
-				92756EB620D499D700251C1C /* Assets.xcassets */,
-				92756EB820D499D700251C1C /* LaunchScreen.storyboard */,
-				92756EBB20D499D700251C1C /* Info.plist */,
-				92756EB320D499D700251C1C /* DanceEventManager.xcdatamodeld */,
+				92756EDD20D49A8E00251C1C /* View Controllers */,
+				92756EDE20D49AA400251C1C /* Storyboards */,
+				92756EDF20D49AB800251C1C /* Resources */,
+				92756EE020D49AC700251C1C /* Core Data */,
 			);
 			path = DanceEventManager;
 			sourceTree = "<group>";
@@ -126,6 +127,42 @@
 				92756ED120D499D700251C1C /* Info.plist */,
 			);
 			path = DanceEventManagerUITests;
+			sourceTree = "<group>";
+		};
+		92756EDD20D49A8E00251C1C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92756EAC20D499D700251C1C /* AppDelegate.swift */,
+				92756EAE20D499D700251C1C /* LoginVC.swift */,
+				92756EE120D55EBE00251C1C /* CreateAccountVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		92756EDE20D49AA400251C1C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				92756EB020D499D700251C1C /* Main.storyboard */,
+				92756EB820D499D700251C1C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		92756EDF20D49AB800251C1C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92756EB620D499D700251C1C /* Assets.xcassets */,
+				92756EBB20D499D700251C1C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92756EE020D49AC700251C1C /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				92756EB320D499D700251C1C /* DanceEventManager.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */,
-				92756EAF20D499D700251C1C /* ViewController.swift in Sources */,
+				92756EAF20D499D700251C1C /* LoginVC.swift in Sources */,
 				92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CD362E4H7;
-				INFOPLIST_FILE = DanceEventManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DanceEventManager/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swingaroo2.apps.DanceEventManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CD362E4H7;
-				INFOPLIST_FILE = DanceEventManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DanceEventManager/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swingaroo2.apps.DanceEventManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
