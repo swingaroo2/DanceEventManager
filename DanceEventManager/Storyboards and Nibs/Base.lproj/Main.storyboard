@@ -74,6 +74,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="9zY-WA-m0x" kind="show" id="tv0-Qq-BHN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.45912944560223912" green="0.14806586541605851" blue="0.11593370304977729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,6 +91,130 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34" y="70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JKZ-ed-ruh">
+            <objects>
+                <navigationController id="9zY-WA-m0x" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JSa-J5-P7J">
+                        <rect key="frame" x="0.0" y="20" width="1366" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NFo-2w-lOb" kind="relationship" relationship="rootViewController" id="m5N-Xk-C1V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="via-nu-5B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="70"/>
+        </scene>
+        <!--Volunteer Schedule-->
+        <scene sceneID="8vw-zr-ujH">
+            <objects>
+                <viewController id="NFo-2w-lOb" customClass="VMScheduleVC" customModule="DanceEventManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="juI-1H-XDM">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMy-X3-0y6">
+                                <rect key="frame" x="0.0" y="64" width="1366" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N14-FK-4eo">
+                                        <rect key="frame" x="8" y="17" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="&lt;"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wH-7l-mIh">
+                                        <rect key="frame" x="62" y="17" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="&gt;"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLICK TO SET EVENT DATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmR-6S-AFK">
+                                        <rect key="frame" x="116" y="22" width="718" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-tN-QbX">
+                                        <rect key="frame" x="1115" y="19" width="243" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Day"/>
+                                            <segment title="Full Event"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hcv-N6-iWy">
+                                        <rect key="frame" x="863" y="19" width="244" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Volunteers"/>
+                                            <segment title="Tasks"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.86062282986111116" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcW-3Z-JU4">
+                                <rect key="frame" x="0.0" y="136" width="1366" height="888"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="MyL-9d-cS5" kind="embed" id="92z-J4-Kzd"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EL2-zL-RH1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Volunteer Schedule" id="8rB-zl-FRP">
+                        <barButtonItem key="leftBarButtonItem" title="Open Menu" id="ww1-SR-eMc">
+                            <connections>
+                                <action selector="toggleMenu:" destination="NFo-2w-lOb" id="Fl4-Jx-BUi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dayFullEventControl" destination="UZA-tN-QbX" id="sjb-WM-OT3"/>
+                        <outlet property="displayedDateLabel" destination="vmR-6S-AFK" id="UPl-f9-sFk"/>
+                        <outlet property="nextDayButton" destination="6wH-7l-mIh" id="Bul-je-hBw"/>
+                        <outlet property="previousDayButton" destination="N14-FK-4eo" id="eso-Si-UL2"/>
+                        <outlet property="volunteersTasksControl" destination="hcv-N6-iWy" id="XQI-85-gM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0XT-mS-Gig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444.6559297218155" y="69.7265625"/>
+        </scene>
+        <!--Schedule Grid View-->
+        <scene sceneID="W6c-Dc-AyD">
+            <objects>
+                <tableViewController id="MyL-9d-cS5" customClass="VMScheduleGridView" customModule="DanceEventManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fxy-UQ-xfh">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="888"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ScheduleGridViewTableCell" id="MAw-QD-lfn" customClass="VMScheduleGridTableViewCell" customModule="DanceEventManager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1366" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MAw-QD-lfn" id="j7M-EW-xh6">
+                                    <rect key="frame" x="0.0" y="0.0" width="1366" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MyL-9d-cS5" id="2UY-lb-gTl"/>
+                            <outlet property="delegate" destination="MyL-9d-cS5" id="gKO-cJ-7GQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulS-FG-5y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445" y="723"/>
         </scene>
         <!--CreateAccountVC-->
         <scene sceneID="Rj7-VZ-Ijx">

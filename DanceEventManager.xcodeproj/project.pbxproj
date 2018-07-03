@@ -18,6 +18,17 @@
 		92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
 		92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
 		92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
+		92E603C020E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */; };
+		92E603C120E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */; };
+		92E603C220E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */; };
+		92E603C320E9EDFA00DB0E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
+		92E603C420E9EDFB00DB0E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
+		92E603E820EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */; };
+		92E603E920EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */; };
+		92E603EA20EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */; };
+		92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
+		92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
+		92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,9 @@
 		92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceEventManagerUITests.swift; sourceTree = "<group>"; };
 		92756ED120D499D700251C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92756EE120D55EBE00251C1C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridView.swift; sourceTree = "<group>"; };
+		92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridTableViewCell.swift; sourceTree = "<group>"; };
+		92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +117,9 @@
 		92756EAB20D499D700251C1C /* DanceEventManager */ = {
 			isa = PBXGroup;
 			children = (
+				92E603E620EB2B1D00DB0E68 /* Views */,
 				92756EDD20D49A8E00251C1C /* View Controllers */,
-				92756EDE20D49AA400251C1C /* Storyboards */,
+				92756EDE20D49AA400251C1C /* Storyboards and Nibs */,
 				92756EDF20D49AB800251C1C /* Resources */,
 				92756EE020D49AC700251C1C /* Core Data */,
 			);
@@ -135,17 +150,18 @@
 				92756EAC20D499D700251C1C /* AppDelegate.swift */,
 				92756EAE20D499D700251C1C /* LoginVC.swift */,
 				92756EE120D55EBE00251C1C /* CreateAccountVC.swift */,
+				92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		92756EDE20D49AA400251C1C /* Storyboards */ = {
+		92756EDE20D49AA400251C1C /* Storyboards and Nibs */ = {
 			isa = PBXGroup;
 			children = (
 				92756EB020D499D700251C1C /* Main.storyboard */,
 				92756EB820D499D700251C1C /* LaunchScreen.storyboard */,
 			);
-			path = Storyboards;
+			path = "Storyboards and Nibs";
 			sourceTree = "<group>";
 		};
 		92756EDF20D49AB800251C1C /* Resources */ = {
@@ -163,6 +179,15 @@
 				92756EB320D499D700251C1C /* DanceEventManager.xcdatamodeld */,
 			);
 			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		92E603E620EB2B1D00DB0E68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */,
+				92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E603C320E9EDFA00DB0E68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E603C420E9EDFB00DB0E68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E603C020E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */,
 				92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */,
 				92756EAF20D499D700251C1C /* LoginVC.swift in Sources */,
+				92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92E603E820EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
 				92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,8 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E603C120E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */,
 				92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */,
+				92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92E603E920EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E603C220E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */,
 				92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */,
+				92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92E603EA20EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

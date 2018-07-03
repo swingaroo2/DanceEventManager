@@ -27,14 +27,13 @@ class LoginVC: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationNC:UINavigationController = segue.destination as! UINavigationController
-        let destinationVC:CreateAccountVC = destinationNC.childViewControllers.first as! CreateAccountVC
-        
-        if self.createAccountButton.titleLabel?.text == applyToVolunteerString
-        {
-            destinationVC.title = applyToVolunteerString
-        } else if self.createAccountButton.titleLabel?.text == organizerString {
-            destinationVC.title = createAccountString
+        if let destinationVC:CreateAccountVC = segue.destination.childViewControllers.first as? CreateAccountVC {
+            if self.createAccountButton.titleLabel?.text == applyToVolunteerString
+            {
+                destinationVC.title = applyToVolunteerString
+            } else if self.createAccountButton.titleLabel?.text == organizerString {
+                destinationVC.title = createAccountString
+            }
         }
     }
     
