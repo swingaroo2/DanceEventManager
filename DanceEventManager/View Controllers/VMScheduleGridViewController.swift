@@ -1,5 +1,5 @@
 //
-//  VMScheduleGridView.swift
+//  VMScheduleGridViewController.swift
 //  DanceEventManager
 //
 //  Created by Zach Lockett-Streiff on 7/2/18.
@@ -8,28 +8,14 @@
 
 import UIKit
 
-class VMScheduleGridView: UITableViewController {
+class VMScheduleGridViewController: UITableViewController {
 
     let scheduleCellIdentifier:String = "ScheduleGridViewTableCell"
     let testDataSourceVolunteers:Array<String> = ["Sara", "Ray", "Mick", "Nate", "Zari", "Wally", "Amaya"]
     let testDataSourceTimeBlocks:Array<String> = ["12am", "1am", "2am", "3am", "4am", "5am", "6am", "7am", "8am", "9am", "10am", "11am",
                                                   "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm", "8pm", "9pm", "10pm", "11pm"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: scheduleCellIdentifier)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -39,19 +25,19 @@ class VMScheduleGridView: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.testDataSourceVolunteers.count
+        // Add extra row for timeline header
+        return self.testDataSourceVolunteers.count + 1
     }
 
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return nil
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> VMScheduleGridTableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:VMScheduleGridTableViewCell = tableView.dequeueReusableCell(withIdentifier: scheduleCellIdentifier, for: indexPath) as! VMScheduleGridTableViewCell
-        cell.textLabel?.text = self.testDataSourceVolunteers[indexPath.row]
+        cell.volunteerNameLabel.text = (indexPath.row == 0) ? "" : self.testDataSourceVolunteers[indexPath.row-1]
         return cell
     }
- 
 
     /*
     // Override to support conditional editing of the table view.

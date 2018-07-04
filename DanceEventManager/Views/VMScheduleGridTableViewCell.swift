@@ -10,6 +10,9 @@ import UIKit
 
 class VMScheduleGridTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var volunteerNameLabel: UILabel!
+    @IBOutlet weak var timelineCollectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

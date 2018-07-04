@@ -18,9 +18,9 @@
 		92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
 		92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
 		92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
-		92E603C020E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */; };
-		92E603C120E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */; };
-		92E603C220E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */; };
+		92E603C020E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */; };
+		92E603C120E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */; };
+		92E603C220E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */; };
 		92E603C320E9EDFA00DB0E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
 		92E603C420E9EDFB00DB0E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
 		92E603E820EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */; };
@@ -64,7 +64,7 @@
 		92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceEventManagerUITests.swift; sourceTree = "<group>"; };
 		92756ED120D499D700251C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92756EE120D55EBE00251C1C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
-		92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridView.swift; sourceTree = "<group>"; };
+		92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridViewController.swift; sourceTree = "<group>"; };
 		92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridTableViewCell.swift; sourceTree = "<group>"; };
 		92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,8 +148,9 @@
 			isa = PBXGroup;
 			children = (
 				92756EAC20D499D700251C1C /* AppDelegate.swift */,
-				92756EAE20D499D700251C1C /* LoginVC.swift */,
 				92756EE120D55EBE00251C1C /* CreateAccountVC.swift */,
+				92756EAE20D499D700251C1C /* LoginVC.swift */,
+				92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */,
 				92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */,
 			);
 			path = "View Controllers";
@@ -184,7 +185,6 @@
 		92E603E620EB2B1D00DB0E68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				92E603BF20E9ECF700DB0E68 /* VMScheduleGridView.swift */,
 				92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */,
 			);
 			path = Views;
@@ -326,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E603C020E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */,
+				92E603C020E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
 				92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */,
 				92756EAF20D499D700251C1C /* LoginVC.swift in Sources */,
@@ -340,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E603C120E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */,
+				92E603C120E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
 				92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */,
 				92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
@@ -352,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92E603C220E9ECF700DB0E68 /* VMScheduleGridView.swift in Sources */,
+				92E603C220E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
 				92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */,
 				92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
