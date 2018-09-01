@@ -1,17 +1,15 @@
 //
-//  CreateAccountVC.swift
+//  VMEventDateSetterVC.swift
 //  DanceEventManager
 //
-//  Created by Zach Lockett-Streiff on 6/16/18.
+//  Created by Zach Lockett-Streiff on 8/14/18.
 //  Copyright © 2018 Swingaroo2. All rights reserved.
 //
 
 import UIKit
 
-class CreateAccountVC: UIViewController {
+class VMEventDateSetterVC: UIViewController {
 
-    // TODO: Create AvailabilityView
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,18 +20,8 @@ class CreateAccountVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-    @IBAction func backToLoginScreenPressed(_ sender: UIBarButtonItem) {
-        self.presentingViewController?.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func submitButtonPressed() {
-        print("Submit button pressed!")
-    }
-    
-    @IBAction func roleSegmentedControlValueChanged(_ sender: UISegmentedControl) {
-    }
-    
     /*
     // MARK: - Navigation
 

@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284DE58FCCC0D47AC8C28EBE /* Pods_DanceEventManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE293E307365AEF1192A4A /* Pods_DanceEventManager.framework */; };
+		50D4514915DE7E35815E48CE /* Pods_DanceEventManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C81C388AE9C25369ECBA9B8 /* Pods_DanceEventManagerUITests.framework */; };
+		721F41E6765F6CD149EF6EF1 /* Pods_DanceEventManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC96A4D92FEA5A70A49317 /* Pods_DanceEventManagerTests.framework */; };
 		92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAC20D499D700251C1C /* AppDelegate.swift */; };
-		92756EAF20D499D700251C1C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAE20D499D700251C1C /* LoginVC.swift */; };
 		92756EB220D499D700251C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
 		92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92756EB320D499D700251C1C /* DanceEventManager.xcdatamodeld */; };
 		92756EB720D499D700251C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB620D499D700251C1C /* Assets.xcassets */; };
 		92756EBA20D499D700251C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB820D499D700251C1C /* LaunchScreen.storyboard */; };
 		92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EC420D499D700251C1C /* DanceEventManagerTests.swift */; };
 		92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */; };
-		92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
-		92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
-		92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EE120D55EBE00251C1C /* CreateAccountVC.swift */; };
+		92E334032134FEF7009D0D62 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E334022134FEF7009D0D62 /* awsconfiguration.json */; };
+		92E334042134FEF7009D0D62 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E334022134FEF7009D0D62 /* awsconfiguration.json */; };
+		92E334052134FEF7009D0D62 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E334022134FEF7009D0D62 /* awsconfiguration.json */; };
+		92E33407213B003E009D0D62 /* CreateEditEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33406213B003E009D0D62 /* CreateEditEventVC.swift */; };
+		92E33408213B003E009D0D62 /* CreateEditEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33406213B003E009D0D62 /* CreateEditEventVC.swift */; };
+		92E33409213B003E009D0D62 /* CreateEditEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E33406213B003E009D0D62 /* CreateEditEventVC.swift */; };
+		92E3340A213B074B009D0D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAC20D499D700251C1C /* AppDelegate.swift */; };
+		92E3340B213B074B009D0D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAC20D499D700251C1C /* AppDelegate.swift */; };
 		92E603C020E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */; };
 		92E603C120E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */; };
 		92E603C220E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */; };
@@ -29,6 +36,9 @@
 		92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
 		92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
 		92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
+		92FBC7CF2123AADA009B78F8 /* VMEventDateSetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */; };
+		92FBC7D12123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */; };
+		92FBC7D22123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19BC96A4D92FEA5A70A49317 /* Pods_DanceEventManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanceEventManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E05601B0FFB0EBCDB4B9C37 /* Pods-DanceEventManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerTests/Pods-DanceEventManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		27FE293E307365AEF1192A4A /* Pods_DanceEventManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanceEventManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73060E4A00822CF306050EEE /* Pods-DanceEventManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManager/Pods-DanceEventManager.debug.xcconfig"; sourceTree = "<group>"; };
+		76219BEF548FAC849F0034C1 /* Pods-DanceEventManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerUITests/Pods-DanceEventManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C81C388AE9C25369ECBA9B8 /* Pods_DanceEventManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanceEventManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0F6A31C57BB4F3061E030B /* Pods-DanceEventManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManager/Pods-DanceEventManager.release.xcconfig"; sourceTree = "<group>"; };
 		92756EA920D499D700251C1C /* DanceEventManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceEventManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92756EAC20D499D700251C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92756EAE20D499D700251C1C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		92756EB120D499D700251C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92756EB420D499D700251C1C /* DanceEventManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DanceEventManager.xcdatamodel; sourceTree = "<group>"; };
 		92756EB620D499D700251C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,10 +79,14 @@
 		92756ECB20D499D700251C1C /* DanceEventManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceEventManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceEventManagerUITests.swift; sourceTree = "<group>"; };
 		92756ED120D499D700251C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92756EE120D55EBE00251C1C /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		92B8AD1797E5E25F6BE810EB /* Pods-DanceEventManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerTests/Pods-DanceEventManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		92E334022134FEF7009D0D62 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		92E33406213B003E009D0D62 /* CreateEditEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditEventVC.swift; sourceTree = "<group>"; };
 		92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridViewController.swift; sourceTree = "<group>"; };
 		92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridTableViewCell.swift; sourceTree = "<group>"; };
 		92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleVC.swift; sourceTree = "<group>"; };
+		92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEventDateSetterVC.swift; sourceTree = "<group>"; };
+		C3EF5C35290EA2CD79F7B903 /* Pods-DanceEventManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerUITests/Pods-DanceEventManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284DE58FCCC0D47AC8C28EBE /* Pods_DanceEventManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721F41E6765F6CD149EF6EF1 /* Pods_DanceEventManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D4514915DE7E35815E48CE /* Pods_DanceEventManagerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48ADF77D357800B50F35CAFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73060E4A00822CF306050EEE /* Pods-DanceEventManager.debug.xcconfig */,
+				7F0F6A31C57BB4F3061E030B /* Pods-DanceEventManager.release.xcconfig */,
+				92B8AD1797E5E25F6BE810EB /* Pods-DanceEventManagerTests.debug.xcconfig */,
+				1E05601B0FFB0EBCDB4B9C37 /* Pods-DanceEventManagerTests.release.xcconfig */,
+				76219BEF548FAC849F0034C1 /* Pods-DanceEventManagerUITests.debug.xcconfig */,
+				C3EF5C35290EA2CD79F7B903 /* Pods-DanceEventManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7AA59A31EFCBE7D175F79E19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FE293E307365AEF1192A4A /* Pods_DanceEventManager.framework */,
+				19BC96A4D92FEA5A70A49317 /* Pods_DanceEventManagerTests.framework */,
+				7C81C388AE9C25369ECBA9B8 /* Pods_DanceEventManagerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92756EA020D499D700251C1C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +147,8 @@
 				92756EC320D499D700251C1C /* DanceEventManagerTests */,
 				92756ECE20D499D700251C1C /* DanceEventManagerUITests */,
 				92756EAA20D499D700251C1C /* Products */,
+				48ADF77D357800B50F35CAFB /* Pods */,
+				7AA59A31EFCBE7D175F79E19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,11 +165,13 @@
 		92756EAB20D499D700251C1C /* DanceEventManager */ = {
 			isa = PBXGroup;
 			children = (
-				92E603E620EB2B1D00DB0E68 /* Views */,
-				92756EDD20D49A8E00251C1C /* View Controllers */,
-				92756EDE20D49AA400251C1C /* Storyboards and Nibs */,
-				92756EDF20D49AB800251C1C /* Resources */,
+				92E334022134FEF7009D0D62 /* awsconfiguration.json */,
+				92756EAC20D499D700251C1C /* AppDelegate.swift */,
 				92756EE020D49AC700251C1C /* Core Data */,
+				92756EDF20D49AB800251C1C /* Resources */,
+				92756EDE20D49AA400251C1C /* Storyboards and Nibs */,
+				92756EDD20D49A8E00251C1C /* View Controllers */,
+				92E603E620EB2B1D00DB0E68 /* Views */,
 			);
 			path = DanceEventManager;
 			sourceTree = "<group>";
@@ -147,9 +197,7 @@
 		92756EDD20D49A8E00251C1C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				92756EAC20D499D700251C1C /* AppDelegate.swift */,
-				92756EE120D55EBE00251C1C /* CreateAccountVC.swift */,
-				92756EAE20D499D700251C1C /* LoginVC.swift */,
+				92E33406213B003E009D0D62 /* CreateEditEventVC.swift */,
 				92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */,
 				92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */,
 			);
@@ -185,6 +233,7 @@
 		92E603E620EB2B1D00DB0E68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */,
 				92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */,
 			);
 			path = Views;
@@ -197,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92756ED420D499D700251C1C /* Build configuration list for PBXNativeTarget "DanceEventManager" */;
 			buildPhases = (
+				D26586CFD043739CEE62480B /* [CP] Check Pods Manifest.lock */,
 				92756EA520D499D700251C1C /* Sources */,
 				92756EA620D499D700251C1C /* Frameworks */,
 				92756EA720D499D700251C1C /* Resources */,
+				DFF4D356CA660F4CC704A2F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92756ED720D499D700251C1C /* Build configuration list for PBXNativeTarget "DanceEventManagerTests" */;
 			buildPhases = (
+				A6FE0BA264B73E2093C4ABCE /* [CP] Check Pods Manifest.lock */,
 				92756EBC20D499D700251C1C /* Sources */,
 				92756EBD20D499D700251C1C /* Frameworks */,
 				92756EBE20D499D700251C1C /* Resources */,
@@ -232,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92756EDA20D499D700251C1C /* Build configuration list for PBXNativeTarget "DanceEventManagerUITests" */;
 			buildPhases = (
+				5BBE0A478224C29A859EDFE2 /* [CP] Check Pods Manifest.lock */,
 				92756EC720D499D700251C1C /* Sources */,
 				92756EC820D499D700251C1C /* Frameworks */,
 				92756EC920D499D700251C1C /* Resources */,
@@ -297,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E334032134FEF7009D0D62 /* awsconfiguration.json in Resources */,
 				92756EBA20D499D700251C1C /* LaunchScreen.storyboard in Resources */,
 				92756EB720D499D700251C1C /* Assets.xcassets in Resources */,
 				92756EB220D499D700251C1C /* Main.storyboard in Resources */,
@@ -307,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E334042134FEF7009D0D62 /* awsconfiguration.json in Resources */,
 				92E603C320E9EDFA00DB0E68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,11 +370,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E334052134FEF7009D0D62 /* awsconfiguration.json in Resources */,
 				92E603C420E9EDFB00DB0E68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BBE0A478224C29A859EDFE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DanceEventManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6FE0BA264B73E2093C4ABCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DanceEventManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26586CFD043739CEE62480B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DanceEventManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFF4D356CA660F4CC704A2F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DanceEventManager/Pods-DanceEventManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DanceEventManager/Pods-DanceEventManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92756EA520D499D700251C1C /* Sources */ = {
@@ -327,12 +470,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C020E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
-				92756EE220D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
 				92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */,
-				92756EAF20D499D700251C1C /* LoginVC.swift in Sources */,
 				92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
 				92E603E820EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
 				92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */,
+				92FBC7CF2123AADA009B78F8 /* VMEventDateSetterVC.swift in Sources */,
+				92E33407213B003E009D0D62 /* CreateEditEventVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,10 +484,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C120E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
-				92756EE320D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
+				92E33408213B003E009D0D62 /* CreateEditEventVC.swift in Sources */,
 				92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */,
 				92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92E3340B213B074B009D0D62 /* AppDelegate.swift in Sources */,
 				92E603E920EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
+				92FBC7D22123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,10 +498,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C220E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
-				92756EE420D55EBE00251C1C /* CreateAccountVC.swift in Sources */,
+				92E33409213B003E009D0D62 /* CreateEditEventVC.swift in Sources */,
 				92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */,
 				92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92E3340A213B074B009D0D62 /* AppDelegate.swift in Sources */,
 				92E603EA20EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
+				92FBC7D12123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +651,7 @@
 		};
 		92756ED520D499D700251C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73060E4A00822CF306050EEE /* Pods-DanceEventManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -519,6 +667,7 @@
 		};
 		92756ED620D499D700251C1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F0F6A31C57BB4F3061E030B /* Pods-DanceEventManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +683,7 @@
 		};
 		92756ED820D499D700251C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B8AD1797E5E25F6BE810EB /* Pods-DanceEventManagerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +701,7 @@
 		};
 		92756ED920D499D700251C1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E05601B0FFB0EBCDB4B9C37 /* Pods-DanceEventManagerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +719,7 @@
 		};
 		92756EDB20D499D700251C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76219BEF548FAC849F0034C1 /* Pods-DanceEventManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +736,7 @@
 		};
 		92756EDC20D499D700251C1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EF5C35290EA2CD79F7B903 /* Pods-DanceEventManagerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

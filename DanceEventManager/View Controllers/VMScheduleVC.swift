@@ -14,25 +14,22 @@ class VMScheduleVC: UIViewController {
     
     @IBOutlet weak var previousDayButton: UIButton!
     @IBOutlet weak var nextDayButton: UIButton!
-    @IBOutlet weak var displayedDateLabel: UILabel!
     @IBOutlet weak var volunteersTasksControl: UISegmentedControl!
     @IBOutlet weak var dayFullEventControl: UISegmentedControl!
-    
-    
+    @IBOutlet weak var displayedDateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     
     @IBAction func toggleMenu(_ sender: UIBarButtonItem) {
         sender.title = isMenuOpen ? "Close Menu" : "Open Menu"
         // Do shit
+    }
+    
+    @IBAction func displayedDateButtonTapped(_ sender: UIButton) {
+        let dateSetterVC:VMEventDateSetterVC = VMEventDateSetterVC()
+        self.present(dateSetterVC, animated: true, completion: nil)
     }
     
     /*
