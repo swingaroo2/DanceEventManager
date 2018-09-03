@@ -27,11 +27,6 @@ class VMScheduleVC: UIViewController {
         // Do shit
     }
     
-    @IBAction func displayedDateButtonTapped(_ sender: UIButton) {
-        let dateSetterVC:VMEventDateSetterVC = VMEventDateSetterVC()
-        self.present(dateSetterVC, animated: true, completion: nil)
-    }
-    
     /*
     // MARK: - Navigation
 

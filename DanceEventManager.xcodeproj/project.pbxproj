@@ -17,6 +17,23 @@
 		92756EBA20D499D700251C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB820D499D700251C1C /* LaunchScreen.storyboard */; };
 		92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EC420D499D700251C1C /* DanceEventManagerTests.swift */; };
 		92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */; };
+		92AA43A4213B1BA50048C690 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43A3213B1BA50048C690 /* Constants.swift */; };
+		92AA43A5213B1BA50048C690 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43A3213B1BA50048C690 /* Constants.swift */; };
+		92AA43A6213B1BA50048C690 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43A3213B1BA50048C690 /* Constants.swift */; };
+		92AA43AA213B1F7D0048C690 /* AppletView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92AA43A9213B1F7D0048C690 /* AppletView.xib */; };
+		92AA43AD213B23EB0048C690 /* EventLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43AB213B23EB0048C690 /* EventLoaderVC.swift */; };
+		92AA43AE213B23EB0048C690 /* EventLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43AB213B23EB0048C690 /* EventLoaderVC.swift */; };
+		92AA43AF213B23EB0048C690 /* EventLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43AB213B23EB0048C690 /* EventLoaderVC.swift */; };
+		92AA43B0213B23EB0048C690 /* EventLoaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92AA43AC213B23EB0048C690 /* EventLoaderVC.xib */; };
+		92AA43B1213B23EB0048C690 /* EventLoaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92AA43AC213B23EB0048C690 /* EventLoaderVC.xib */; };
+		92AA43B2213B23EB0048C690 /* EventLoaderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92AA43AC213B23EB0048C690 /* EventLoaderVC.xib */; };
+		92AA43B4213B26A00048C690 /* UITextField+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B3213B26A00048C690 /* UITextField+Custom.swift */; };
+		92AA43B6213B27210048C690 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B5213B27210048C690 /* CustomPickerView.swift */; };
+		92AA43B7213B27210048C690 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B5213B27210048C690 /* CustomPickerView.swift */; };
+		92AA43B8213B27210048C690 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B5213B27210048C690 /* CustomPickerView.swift */; };
+		92AA43BA213DBAC40048C690 /* AppletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B9213DBAC40048C690 /* AppletView.swift */; };
+		92AA43BB213DBAC40048C690 /* AppletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B9213DBAC40048C690 /* AppletView.swift */; };
+		92AA43BC213DBAC40048C690 /* AppletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B9213DBAC40048C690 /* AppletView.swift */; };
 		92E334032134FEF7009D0D62 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E334022134FEF7009D0D62 /* awsconfiguration.json */; };
 		92E334042134FEF7009D0D62 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E334022134FEF7009D0D62 /* awsconfiguration.json */; };
 		92E334052134FEF7009D0D62 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92E334022134FEF7009D0D62 /* awsconfiguration.json */; };
@@ -36,9 +53,6 @@
 		92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
 		92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
 		92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */; };
-		92FBC7CF2123AADA009B78F8 /* VMEventDateSetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */; };
-		92FBC7D12123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */; };
-		92FBC7D22123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,13 +93,19 @@
 		92756ECB20D499D700251C1C /* DanceEventManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceEventManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceEventManagerUITests.swift; sourceTree = "<group>"; };
 		92756ED120D499D700251C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92AA43A3213B1BA50048C690 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92AA43A9213B1F7D0048C690 /* AppletView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppletView.xib; sourceTree = "<group>"; };
+		92AA43AB213B23EB0048C690 /* EventLoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLoaderVC.swift; sourceTree = "<group>"; };
+		92AA43AC213B23EB0048C690 /* EventLoaderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventLoaderVC.xib; sourceTree = "<group>"; };
+		92AA43B3213B26A00048C690 /* UITextField+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Custom.swift"; sourceTree = "<group>"; };
+		92AA43B5213B27210048C690 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		92AA43B9213DBAC40048C690 /* AppletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppletView.swift; sourceTree = "<group>"; };
 		92B8AD1797E5E25F6BE810EB /* Pods-DanceEventManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerTests/Pods-DanceEventManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92E334022134FEF7009D0D62 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		92E33406213B003E009D0D62 /* CreateEditEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditEventVC.swift; sourceTree = "<group>"; };
 		92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridViewController.swift; sourceTree = "<group>"; };
 		92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleGridTableViewCell.swift; sourceTree = "<group>"; };
 		92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMScheduleVC.swift; sourceTree = "<group>"; };
-		92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEventDateSetterVC.swift; sourceTree = "<group>"; };
 		C3EF5C35290EA2CD79F7B903 /* Pods-DanceEventManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerUITests/Pods-DanceEventManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,9 +185,10 @@
 		92756EAB20D499D700251C1C /* DanceEventManager */ = {
 			isa = PBXGroup;
 			children = (
-				92E334022134FEF7009D0D62 /* awsconfiguration.json */,
 				92756EAC20D499D700251C1C /* AppDelegate.swift */,
+				92E334022134FEF7009D0D62 /* awsconfiguration.json */,
 				92756EE020D49AC700251C1C /* Core Data */,
+				92AA43A2213B1B6F0048C690 /* Helper Classes */,
 				92756EDF20D49AB800251C1C /* Resources */,
 				92756EDE20D49AA400251C1C /* Storyboards and Nibs */,
 				92756EDD20D49A8E00251C1C /* View Controllers */,
@@ -198,8 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				92E33406213B003E009D0D62 /* CreateEditEventVC.swift */,
+				92AA43AB213B23EB0048C690 /* EventLoaderVC.swift */,
 				92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */,
 				92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */,
+				92AA43B9213DBAC40048C690 /* AppletView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -207,8 +230,10 @@
 		92756EDE20D49AA400251C1C /* Storyboards and Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				92756EB020D499D700251C1C /* Main.storyboard */,
+				92AA43A9213B1F7D0048C690 /* AppletView.xib */,
+				92AA43AC213B23EB0048C690 /* EventLoaderVC.xib */,
 				92756EB820D499D700251C1C /* LaunchScreen.storyboard */,
+				92756EB020D499D700251C1C /* Main.storyboard */,
 			);
 			path = "Storyboards and Nibs";
 			sourceTree = "<group>";
@@ -230,11 +255,20 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
+		92AA43A2213B1B6F0048C690 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				92AA43A3213B1BA50048C690 /* Constants.swift */,
+				92AA43B3213B26A00048C690 /* UITextField+Custom.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
 		92E603E620EB2B1D00DB0E68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				92FBC7CD2123AADA009B78F8 /* VMEventDateSetterVC.swift */,
 				92E603E720EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift */,
+				92AA43B5213B27210048C690 /* CustomPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,10 +384,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AA43B0213B23EB0048C690 /* EventLoaderVC.xib in Resources */,
 				92E334032134FEF7009D0D62 /* awsconfiguration.json in Resources */,
 				92756EBA20D499D700251C1C /* LaunchScreen.storyboard in Resources */,
 				92756EB720D499D700251C1C /* Assets.xcassets in Resources */,
 				92756EB220D499D700251C1C /* Main.storyboard in Resources */,
+				92AA43AA213B1F7D0048C690 /* AppletView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AA43B1213B23EB0048C690 /* EventLoaderVC.xib in Resources */,
 				92E334042134FEF7009D0D62 /* awsconfiguration.json in Resources */,
 				92E603C320E9EDFA00DB0E68 /* Main.storyboard in Resources */,
 			);
@@ -370,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AA43B2213B23EB0048C690 /* EventLoaderVC.xib in Resources */,
 				92E334052134FEF7009D0D62 /* awsconfiguration.json in Resources */,
 				92E603C420E9EDFB00DB0E68 /* Main.storyboard in Resources */,
 			);
@@ -471,11 +509,15 @@
 			files = (
 				92E603C020E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
 				92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */,
+				92AA43B4213B26A00048C690 /* UITextField+Custom.swift in Sources */,
 				92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92AA43AD213B23EB0048C690 /* EventLoaderVC.swift in Sources */,
 				92E603E820EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
+				92AA43BA213DBAC40048C690 /* AppletView.swift in Sources */,
 				92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */,
-				92FBC7CF2123AADA009B78F8 /* VMEventDateSetterVC.swift in Sources */,
 				92E33407213B003E009D0D62 /* CreateEditEventVC.swift in Sources */,
+				92AA43A4213B1BA50048C690 /* Constants.swift in Sources */,
+				92AA43B6213B27210048C690 /* CustomPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,12 +526,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C120E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
+				92AA43B7213B27210048C690 /* CustomPickerView.swift in Sources */,
 				92E33408213B003E009D0D62 /* CreateEditEventVC.swift in Sources */,
 				92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */,
+				92AA43AE213B23EB0048C690 /* EventLoaderVC.swift in Sources */,
 				92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92AA43BB213DBAC40048C690 /* AppletView.swift in Sources */,
 				92E3340B213B074B009D0D62 /* AppDelegate.swift in Sources */,
 				92E603E920EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
-				92FBC7D22123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */,
+				92AA43A5213B1BA50048C690 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,12 +543,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C220E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
+				92AA43B8213B27210048C690 /* CustomPickerView.swift in Sources */,
 				92E33409213B003E009D0D62 /* CreateEditEventVC.swift in Sources */,
 				92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */,
+				92AA43AF213B23EB0048C690 /* EventLoaderVC.swift in Sources */,
 				92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
+				92AA43BC213DBAC40048C690 /* AppletView.swift in Sources */,
 				92E3340A213B074B009D0D62 /* AppDelegate.swift in Sources */,
 				92E603EA20EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
-				92FBC7D12123AAE6009B78F8 /* VMEventDateSetterVC.swift in Sources */,
+				92AA43A6213B1BA50048C690 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

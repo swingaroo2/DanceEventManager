@@ -1,19 +1,23 @@
 //
-//  VMEventDateSetterVC.swift
+//  EventLoaderVC.swift
 //  DanceEventManager
 //
-//  Created by Zach Lockett-Streiff on 8/14/18.
+//  Created by Zach Lockett-Streiff on 9/1/18.
 //  Copyright © 2018 Swingaroo2. All rights reserved.
 //
 
 import UIKit
 
-class VMEventDateSetterVC: UIViewController {
+class EventLoaderVC: UIViewController {
 
+    @IBOutlet weak var eventPickerTextField: UITextField!
+    
+    // TODO: Refactor this into a separate service class that fetches a user's events from the server
+    let events = ["Hot Rhythm Holiday 2020"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.eventPickerTextField.loadDropdownData(data: events)
     }
 
     override func didReceiveMemoryWarning() {
