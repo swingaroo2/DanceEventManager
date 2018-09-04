@@ -12,12 +12,10 @@ class EventLoaderVC: UIViewController {
 
     @IBOutlet weak var eventPickerTextField: UITextField!
     
-    // TODO: Refactor this into a separate service class that fetches a user's events from the server
-    let events = ["Hot Rhythm Holiday 2020"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.eventPickerTextField.loadDropdownData(data: events)
+        self.loadEvents()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +23,12 @@ class EventLoaderVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadEvents() {
+        // Call out to EventLoader service
+        var events:Array<String> = ["Hot Rhythm Holiday 2020"] // Placeholder for service call
+        events.append("New Event") // Default entry
+        self.eventPickerTextField.loadDropdownData(data: events)
+    }
 
     /*
     // MARK: - Navigation
