@@ -25,12 +25,13 @@ class CreateEditEventVC: UIViewController, UICollectionViewDelegate, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.edgesForExtendedLayout = []
         
         if !Constants().IsUserLoggedIn && !Constants().BypassLogin {
             self.initializeLogin()
         } else {
             let eventLoaderVC:EventLoaderVC = EventLoaderVC()
-            self.present(eventLoaderVC, animated: true, completion: nil)
+            self.navigationController?.pushViewController(eventLoaderVC, animated: true)
         }
         
         self.appletCollectionView.register(UINib.init(nibName: AppletViewIdentifier, bundle: nil), forCellWithReuseIdentifier: AppletViewIdentifier)
@@ -43,7 +44,7 @@ class CreateEditEventVC: UIViewController, UICollectionViewDelegate, UICollectio
     
     // MARK: UICollectionView callbacks
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return applets.count
+        return self.applets.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -75,7 +76,7 @@ class CreateEditEventVC: UIViewController, UICollectionViewDelegate, UICollectio
                                         } else {
                                             print("Sign-in successful!")
                                             let eventLoaderVC:EventLoaderVC = EventLoaderVC()
-                                            self.present(eventLoaderVC, animated: true, completion: nil)
+                                            self.navigationController?.pushViewController(eventLoaderVC, animated: true)
                                         }
                 })
         }

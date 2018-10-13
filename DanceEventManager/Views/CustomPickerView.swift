@@ -41,7 +41,7 @@ class CustomPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
         toolBar.tintColor = UIColor(red: 92/255, green: 216/255, blue: 255/255, alpha: 1)
         toolBar.sizeToFit()
         
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(CustomPickerView.toolbarDoneButtonPressed))
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(toolbarDoneButtonPressed))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         toolBar.setItems([spaceButton, doneButton, spaceButton], animated: false)
         toolBar.isUserInteractionEnabled = true
@@ -80,7 +80,8 @@ class CustomPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.pickerTextField.text = self.pickerData[row]
+        print("Implement in a parent class")
+        //self.pickerTextField.text = self.pickerData[row]
     }
 
 }

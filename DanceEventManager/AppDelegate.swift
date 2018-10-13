@@ -9,11 +9,13 @@
 import UIKit
 import CoreData
 import AWSMobileClient
+import AWSPinpoint
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var pinpoint: AWSPinpoint?
 
     // Add a AWSMobileClient call in application:open url
     func application(_ application: UIApplication, open url: URL,
@@ -31,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
         AWSDDLog.sharedInstance.logLevel = .info
+        self.pinpoint = AWSPinpoint(configuration:AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
         let didFinishLaunching = AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
         return didFinishLaunching
     }
