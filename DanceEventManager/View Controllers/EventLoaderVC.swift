@@ -15,8 +15,12 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var newEventNameTextField: UITextField!
     @IBOutlet weak var startDatePicker: UITextField!
     @IBOutlet weak var endDatePicker: UITextField!
+    @IBOutlet weak var loadEventToolbarButton: UIBarButtonItem!
+    @IBOutlet weak var organizationCodeTextField: UITextField!
+    @IBOutlet weak var organizationCodeContainerViewHeightConstraint: NSLayoutConstraint!
     
-    var events:Array<Event>! = []
+    var events:Array<Events>! = []
+    var selectedEvent:Events!
     var selectedEventRow:Int = 0
     
     override func viewDidLoad() {
@@ -43,7 +47,7 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     func loadEvents() {
         let eventsService:EventsService = EventsService()
-        let loadedEvents:Array<Event> = eventsService.loadEvents()
+        let loadedEvents:Array<Events> = eventsService.loadEvents()
         self.events = loadedEvents
     }
     
@@ -51,23 +55,22 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         var pickerArray:Array<String> = self.events.map { $0.getEventNameWithYear() }
         pickerArray.append("New Event")
         
-        if pickerArray.count > 1 {
-            self.eventPickerTextField.loadDropdownData(data: pickerArray)
-            let eventPickerView:CustomPickerView = self.eventPickerTextField.inputView as! CustomPickerView
-            eventPickerView.delegate = self
-            eventPickerView.dataSource = self
-        } else {
-            self.newEventFieldsContainerView.isHidden = false
+        self.eventPickerTextField.loadDropdownData(data: pickerArray)
+        let eventPickerView:CustomPickerView = self.eventPickerTextField.inputView as! CustomPickerView
+        eventPickerView.delegate = self
+        eventPickerView.dataSource = self
+        
+        if self.events.count == 0 {
+            self.showNewEventContainerView()
         }
         
         let eventPickerDoneButton:UIBarButtonItem = self.getEventPickerDoneButton()
         eventPickerDoneButton.target = self
         eventPickerDoneButton.action = #selector(eventPickerDoneButtonPressed)
-        
     }
     
     func setUpDatePickers() {
-        self.newEventFieldsContainerView.isHidden = true
+        self.hideNewEventContainerView()
         self.configureDatePicker(self.startDatePicker)
         self.configureDatePicker(self.endDatePicker)
     }
@@ -125,12 +128,12 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         return 1
     }
     
-    func updateDatePickersWithEvent(_ event:Event) {
+    func updateDatePickersWithEvent(_ event:Events) {
         let formatter:DateFormatter = DateFormatter()
         formatter.dateFormat = "MMM dd yyyy"
         
-        let startDateStr:String = formatter.string(from: event.startDate)
-        let endDateStr:String = formatter.string(from: event.endDate)
+        let startDateStr:String = event._startDate!
+        let endDateStr:String = event._endDate!
         
         self.startDatePicker.text = startDateStr
         self.endDatePicker.text = endDateStr
@@ -153,8 +156,21 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     @objc private func eventPickerDoneButtonPressed() {
-        self.newEventFieldsContainerView.isHidden = (self.eventPickerTextField.text != "New Event")
+        if self.eventPickerTextField.text != "New Event" {
+            self.hideNewEventContainerView()
+        } else {
+            self.showNewEventContainerView()
+        }
         self.eventPickerTextField.endEditing(true)
+    }
+    
+    private func hideNewEventContainerView() {
+        self.newEventFieldsContainerView.isHidden = true
+        self.loadEventToolbarButton.title = "Load Event"
+    }
+    private func showNewEventContainerView() {
+        self.newEventFieldsContainerView.isHidden = false
+        self.loadEventToolbarButton.title = "Create Event"
     }
     
     // MARK: Event picker callbacks
@@ -180,9 +196,66 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
     }
     
+    private func createNewEventObject() -> Events {
+        let newEvent:Events = Events()
+        newEvent._eventName = self.newEventNameTextField.text!
+        newEvent._startDate = self.startDatePicker.text!
+        newEvent._endDate = self.endDatePicker.text!
+        // TODO: Figure out organization codes
+        return newEvent
+    }
+    
+    private func validateFields() -> Bool {
+        let isAnyFieldEmpty:Bool = (self.newEventNameTextField.text?.isEmpty)! || (self.startDatePicker.text?.isEmpty)! ||
+            (self.endDatePicker.text?.isEmpty)!
+        return !isAnyFieldEmpty
+    }
+    
+    func clearEventDetailsFields() {
+        self.newEventNameTextField.text = ""
+        self.startDatePicker.text = ""
+        self.endDatePicker.text = ""
+    }
+    
+    // MARK: Alert messages
+    func showEmptyFieldsAlert() {
+        let alertController:UIAlertController = UIAlertController.init(title: nil, message: "Please fill out all fields", preferredStyle: .alert)
+        let okAction:UIAlertAction = UIAlertAction.init(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: Storage layer interactions
+    func executeCreateEventFlow() {
+        StorageManager().dynamoDBObjectMapper.save(self.createNewEventObject(), completionHandler: {(error: Error?) -> Void in
+            if let error = error {
+                print("DynamoDB Save Error: \(error.localizedDescription)")
+                return
+            }
+            print("New Event Saved!")
+            self.clearEventDetailsFields()
+        })
+    }
+    
+    func startEditingEvent() {
+        print("Now editing event: \(self.selectedEvent.getEventNameWithYear())")
+    }
+    
     // MARK: IBActions
     @IBAction func signOutButtonPressed(_ sender: UIBarButtonItem) {
         AuthService.signOut(self.navigationController!)
+    }
+    
+    @IBAction func loadEventButtonPressed(_ sender: UIBarButtonItem) {
+        if sender.title == "Load Event" {
+            self.startEditingEvent()
+        } else if sender.title == "Create Event" {
+            if self.validateFields() {
+                self.executeCreateEventFlow()
+            } else {
+                self.showEmptyFieldsAlert()
+            }
+        }
     }
     
     @IBAction func showStartDatePicker(_ sender: UITextField) {}
