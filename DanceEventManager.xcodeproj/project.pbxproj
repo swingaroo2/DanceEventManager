@@ -10,6 +10,8 @@
 		284DE58FCCC0D47AC8C28EBE /* Pods_DanceEventManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE293E307365AEF1192A4A /* Pods_DanceEventManager.framework */; };
 		50D4514915DE7E35815E48CE /* Pods_DanceEventManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C81C388AE9C25369ECBA9B8 /* Pods_DanceEventManagerUITests.framework */; };
 		721F41E6765F6CD149EF6EF1 /* Pods_DanceEventManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC96A4D92FEA5A70A49317 /* Pods_DanceEventManagerTests.framework */; };
+		92625B2A21C1EE9B0081E954 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625B2821C1EE9B0081E954 /* Teams.swift */; };
+		92625B2B21C1EE9B0081E954 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92625B2921C1EE9B0081E954 /* Users.swift */; };
 		92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92756EAC20D499D700251C1C /* AppDelegate.swift */; };
 		92756EB220D499D700251C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92756EB020D499D700251C1C /* Main.storyboard */; };
 		92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92756EB320D499D700251C1C /* DanceEventManager.xcdatamodeld */; };
@@ -20,9 +22,9 @@
 		92898665218690B00062859A /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92898664218690B00062859A /* Events.swift */; };
 		92898666218690B00062859A /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92898664218690B00062859A /* Events.swift */; };
 		92898667218690B00062859A /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92898664218690B00062859A /* Events.swift */; };
-		9289E52F219002A50049696B /* OrganizationLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289E52E219002A50049696B /* OrganizationLoaderVC.swift */; };
-		9289E530219002A50049696B /* OrganizationLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289E52E219002A50049696B /* OrganizationLoaderVC.swift */; };
-		9289E531219002A50049696B /* OrganizationLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289E52E219002A50049696B /* OrganizationLoaderVC.swift */; };
+		9289E52F219002A50049696B /* TeamLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289E52E219002A50049696B /* TeamLoaderVC.swift */; };
+		9289E530219002A50049696B /* TeamLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289E52E219002A50049696B /* TeamLoaderVC.swift */; };
+		9289E531219002A50049696B /* TeamLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9289E52E219002A50049696B /* TeamLoaderVC.swift */; };
 		9290BAC4216F1CAD00EEB068 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290BAC3216F1CAD00EEB068 /* AuthService.swift */; };
 		9290BAC5216F1CAD00EEB068 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290BAC3216F1CAD00EEB068 /* AuthService.swift */; };
 		9290BAC6216F1CAD00EEB068 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290BAC3216F1CAD00EEB068 /* AuthService.swift */; };
@@ -49,9 +51,6 @@
 		92AA43BA213DBAC40048C690 /* AppletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B9213DBAC40048C690 /* AppletView.swift */; };
 		92AA43BB213DBAC40048C690 /* AppletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B9213DBAC40048C690 /* AppletView.swift */; };
 		92AA43BC213DBAC40048C690 /* AppletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AA43B9213DBAC40048C690 /* AppletView.swift */; };
-		92AE82E1216AA001006F0458 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE82E0216AA001006F0458 /* Event.swift */; };
-		92AE82E2216AA001006F0458 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE82E0216AA001006F0458 /* Event.swift */; };
-		92AE82E3216AA001006F0458 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AE82E0216AA001006F0458 /* Event.swift */; };
 		92AE82ED216F0057006F0458 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92AE82E9216F0057006F0458 /* awsconfiguration.json */; };
 		92AE82EE216F0057006F0458 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92AE82E9216F0057006F0458 /* awsconfiguration.json */; };
 		92AE82EF216F0057006F0458 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 92AE82E9216F0057006F0458 /* awsconfiguration.json */; };
@@ -98,6 +97,8 @@
 		76219BEF548FAC849F0034C1 /* Pods-DanceEventManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerUITests/Pods-DanceEventManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C81C388AE9C25369ECBA9B8 /* Pods_DanceEventManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanceEventManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0F6A31C57BB4F3061E030B /* Pods-DanceEventManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManager/Pods-DanceEventManager.release.xcconfig"; sourceTree = "<group>"; };
+		92625B2821C1EE9B0081E954 /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		92625B2921C1EE9B0081E954 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		92756EA920D499D700251C1C /* DanceEventManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceEventManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92756EAC20D499D700251C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92756EB120D499D700251C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,7 +113,7 @@
 		92756ECF20D499D700251C1C /* DanceEventManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceEventManagerUITests.swift; sourceTree = "<group>"; };
 		92756ED120D499D700251C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92898664218690B00062859A /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
-		9289E52E219002A50049696B /* OrganizationLoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationLoaderVC.swift; sourceTree = "<group>"; };
+		9289E52E219002A50049696B /* TeamLoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLoaderVC.swift; sourceTree = "<group>"; };
 		9290BAC3216F1CAD00EEB068 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9290BAC72171210200EEB068 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
 		9290BACC2172C5A300EEB068 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -123,7 +124,6 @@
 		92AA43B3213B26A00048C690 /* UITextField+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Custom.swift"; sourceTree = "<group>"; };
 		92AA43B5213B27210048C690 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		92AA43B9213DBAC40048C690 /* AppletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppletView.swift; sourceTree = "<group>"; };
-		92AE82E0216AA001006F0458 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		92AE82E9216F0057006F0458 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		92B8AD1797E5E25F6BE810EB /* Pods-DanceEventManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanceEventManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanceEventManagerTests/Pods-DanceEventManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92CCE90021AA505F0067D06E /* UITableView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Custom.swift"; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 			children = (
 				92AA43B9213DBAC40048C690 /* AppletView.swift */,
 				92AA43AB213B23EB0048C690 /* EventLoaderVC.swift */,
-				9289E52E219002A50049696B /* OrganizationLoaderVC.swift */,
+				9289E52E219002A50049696B /* TeamLoaderVC.swift */,
 				92E603BF20E9ECF700DB0E68 /* VMScheduleGridViewController.swift */,
 				92ED6D8620DDDE0D00BA4E1B /* VMScheduleVC.swift */,
 			);
@@ -312,7 +312,8 @@
 		92AE82DF216A9FCD006F0458 /* Model Objects */ = {
 			isa = PBXGroup;
 			children = (
-				92AE82E0216AA001006F0458 /* Event.swift */,
+				92625B2821C1EE9B0081E954 /* Teams.swift */,
+				92625B2921C1EE9B0081E954 /* Users.swift */,
 				92898664218690B00062859A /* Events.swift */,
 			);
 			path = "Model Objects";
@@ -562,17 +563,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92625B2A21C1EE9B0081E954 /* Teams.swift in Sources */,
 				92E603C020E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
 				92756EB520D499D700251C1C /* DanceEventManager.xcdatamodeld in Sources */,
 				92AA43B4213B26A00048C690 /* UITextField+Custom.swift in Sources */,
 				92ED6D8720DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
-				92AE82E1216AA001006F0458 /* Event.swift in Sources */,
+				92625B2B21C1EE9B0081E954 /* Users.swift in Sources */,
 				92AA43AD213B23EB0048C690 /* EventLoaderVC.swift in Sources */,
 				9290BAD12172C70D00EEB068 /* EventStorageManager.swift in Sources */,
 				9290BAC82171210200EEB068 /* EventsService.swift in Sources */,
 				9290BAC4216F1CAD00EEB068 /* AuthService.swift in Sources */,
 				92E603E820EB2BCB00DB0E68 /* VMScheduleGridTableViewCell.swift in Sources */,
-				9289E52F219002A50049696B /* OrganizationLoaderVC.swift in Sources */,
+				9289E52F219002A50049696B /* TeamLoaderVC.swift in Sources */,
 				92AA43BA213DBAC40048C690 /* AppletView.swift in Sources */,
 				92756EAD20D499D700251C1C /* AppDelegate.swift in Sources */,
 				9290BACD2172C5A300EEB068 /* StorageManager.swift in Sources */,
@@ -588,13 +590,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C120E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
-				92AE82E2216AA001006F0458 /* Event.swift in Sources */,
 				92AA43B7213B27210048C690 /* CustomPickerView.swift in Sources */,
 				9290BAD22172C70D00EEB068 /* EventStorageManager.swift in Sources */,
 				9290BACE2172C5A300EEB068 /* StorageManager.swift in Sources */,
 				9290BAC5216F1CAD00EEB068 /* AuthService.swift in Sources */,
 				92756EC520D499D700251C1C /* DanceEventManagerTests.swift in Sources */,
-				9289E530219002A50049696B /* OrganizationLoaderVC.swift in Sources */,
+				9289E530219002A50049696B /* TeamLoaderVC.swift in Sources */,
 				92AA43AE213B23EB0048C690 /* EventLoaderVC.swift in Sources */,
 				92ED6D8820DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
 				9290BAC92171210200EEB068 /* EventsService.swift in Sources */,
@@ -612,13 +613,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92E603C220E9ECF700DB0E68 /* VMScheduleGridViewController.swift in Sources */,
-				92AE82E3216AA001006F0458 /* Event.swift in Sources */,
 				92AA43B8213B27210048C690 /* CustomPickerView.swift in Sources */,
 				9290BAD32172C70D00EEB068 /* EventStorageManager.swift in Sources */,
 				9290BACF2172C5A300EEB068 /* StorageManager.swift in Sources */,
 				9290BAC6216F1CAD00EEB068 /* AuthService.swift in Sources */,
 				92756ED020D499D700251C1C /* DanceEventManagerUITests.swift in Sources */,
-				9289E531219002A50049696B /* OrganizationLoaderVC.swift in Sources */,
+				9289E531219002A50049696B /* TeamLoaderVC.swift in Sources */,
 				92AA43AF213B23EB0048C690 /* EventLoaderVC.swift in Sources */,
 				92ED6D8920DDDE0D00BA4E1B /* VMScheduleVC.swift in Sources */,
 				9290BACA2171210200EEB068 /* EventsService.swift in Sources */,
@@ -720,6 +720,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -769,6 +770,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

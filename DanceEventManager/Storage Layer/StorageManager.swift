@@ -11,5 +11,5 @@ import AWSCore
 import AWSDynamoDB
 
 class StorageManager : NSObject {    
-    let dynamoDBObjectMapper:AWSDynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+    let objectMapper:AWSDynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
 }

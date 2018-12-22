@@ -17,7 +17,7 @@ class EventsService : NSObject {
         
         /* Create dummy events */
         let event1:Events = Events()
-        event1._eventName = "Hot Rhythm Holiday"
+        event1._title = "Hot Rhythm Holiday"
         event1.setStartDateWithDateObject(date: Date())
         var components = DateComponents()
         components.setValue(2, for: .day)
@@ -25,7 +25,7 @@ class EventsService : NSObject {
         event1.setEndDateWithDateObject(date: endDate)
         
         let event2:Events = Events()
-        event2._eventName = "Ball of Fire"
+        event2._title = "Ball of Fire"
         event2.setStartDateWithDateObject(date: Date())
         components = DateComponents()
         components.setValue(2, for: .day)

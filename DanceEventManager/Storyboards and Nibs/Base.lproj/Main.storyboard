@@ -10,18 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Select Organization-->
+        <!--Select Team-->
         <scene sceneID="5g0-my-e6p">
             <objects>
-                <viewController id="Vp0-mb-stM" customClass="OrganizationLoaderVC" customModule="DanceEventManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vp0-mb-stM" customClass="TeamLoaderVC" customModule="DanceEventManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sSJ-Jw-tL0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-XM-PUF" userLabel="Organizations Table Container View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-XM-PUF" userLabel="Teams Table Container View">
                                 <rect key="frame" x="16" y="75" width="343" height="189"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Organizations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-gT-inI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Teams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-gT-inI">
                                         <rect key="frame" x="0.0" y="8" width="343" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
@@ -48,44 +48,71 @@
                                     <constraint firstItem="jPl-gT-inI" firstAttribute="top" secondItem="yQr-XM-PUF" secondAttribute="top" constant="8" id="uPa-aD-2VZ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv0-y0-zzM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mv0-y0-zzM">
                                 <rect key="frame" x="16" y="274" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.015686274509803921" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K66-ld-SXz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Create New Organization">
+                                <state key="normal" title="Create New Team">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="createNewOrganizationButtonPressed" destination="Vp0-mb-stM" eventType="touchUpInside" id="E1Q-V7-bFb"/>
+                                    <action selector="createNewTeamButtonPressed:" destination="Vp0-mb-stM" eventType="touchUpInside" id="Fqs-pw-cAO"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-Tn-AOq" userLabel="Organization Name Container View">
-                                <rect key="frame" x="16" y="314" width="343" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-Tn-AOq" userLabel="Team Name Container View">
+                                <rect key="frame" x="16" y="314" width="343" height="145"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="New Organization Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqE-ua-7xl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Team Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqE-ua-7xl">
                                         <rect key="frame" x="0.0" y="8" width="343" height="48"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="XWV-mQ-5tI"/>
                                             <constraint firstAttribute="height" constant="48" id="jiy-mr-mHl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter organization name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TxI-Ib-g3s">
-                                        <rect key="frame" x="1" y="64" width="343" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter team name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TxI-Ib-g3s">
+                                        <rect key="frame" x="0.0" y="64" width="343" height="30"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="JTg-NN-zve"/>
                                             <constraint firstAttribute="height" constant="30" id="dYq-fS-pP3"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4D-sw-X4Q" userLabel="Submit New Event Button">
+                                        <rect key="frame" x="0.0" y="104" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.015686274510000001" green="0.20000000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitNewEventButtonPressed:" destination="Vp0-mb-stM" eventType="touchUpInside" id="BZT-30-ke5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="TxI-Ib-g3s" firstAttribute="leading" secondItem="cLK-Tn-AOq" secondAttribute="leading" id="27S-6q-Dz0"/>
+                                    <constraint firstItem="M4D-sw-X4Q" firstAttribute="leading" secondItem="cLK-Tn-AOq" secondAttribute="leading" id="3TJ-I0-xAS"/>
+                                    <constraint firstItem="TxI-Ib-g3s" firstAttribute="top" secondItem="KqE-ua-7xl" secondAttribute="bottom" constant="8" id="6D9-1g-Ya6"/>
+                                    <constraint firstAttribute="width" constant="343" id="8f6-Ou-NHY"/>
+                                    <constraint firstAttribute="trailing" secondItem="KqE-ua-7xl" secondAttribute="trailing" id="9WH-CH-teQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="M4D-sw-X4Q" secondAttribute="trailing" id="J5y-4Z-20A"/>
+                                    <constraint firstAttribute="bottom" secondItem="TxI-Ib-g3s" secondAttribute="bottom" constant="51" id="Szo-1a-a6V"/>
+                                    <constraint firstAttribute="trailing" secondItem="TxI-Ib-g3s" secondAttribute="trailing" id="VF8-K0-Uiv"/>
+                                    <constraint firstItem="KqE-ua-7xl" firstAttribute="leading" secondItem="cLK-Tn-AOq" secondAttribute="leading" id="YRN-Fn-YmP"/>
                                     <constraint firstItem="TxI-Ib-g3s" firstAttribute="top" secondItem="KqE-ua-7xl" secondAttribute="bottom" constant="8" id="ZPc-x0-K8W"/>
+                                    <constraint firstItem="M4D-sw-X4Q" firstAttribute="top" secondItem="TxI-Ib-g3s" secondAttribute="bottom" constant="10" id="dwC-Wd-kJ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="M4D-sw-X4Q" secondAttribute="bottom" constant="11" id="eM8-FF-Qfo"/>
+                                    <constraint firstItem="KqE-ua-7xl" firstAttribute="top" secondItem="cLK-Tn-AOq" secondAttribute="top" constant="8" id="ePe-GL-ySu"/>
+                                    <constraint firstAttribute="height" constant="145" id="ltc-I1-Xs9"/>
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNj-GV-o1h">
@@ -111,34 +138,62 @@
                             <constraint firstItem="lNj-GV-o1h" firstAttribute="bottom" secondItem="ySd-yU-wcE" secondAttribute="bottom" id="7Vp-8P-QUB"/>
                             <constraint firstItem="lNj-GV-o1h" firstAttribute="leading" secondItem="ySd-yU-wcE" secondAttribute="leading" id="Av6-aL-wav"/>
                             <constraint firstItem="lNj-GV-o1h" firstAttribute="trailing" secondItem="ySd-yU-wcE" secondAttribute="trailing" id="EoN-RC-OpE"/>
+                            <constraint firstItem="ySd-yU-wcE" firstAttribute="trailing" secondItem="cLK-Tn-AOq" secondAttribute="trailing" constant="16" id="Ghl-uK-v5N"/>
+                            <constraint firstItem="cLK-Tn-AOq" firstAttribute="leading" secondItem="ySd-yU-wcE" secondAttribute="leading" constant="16" id="I0N-N4-Pz7"/>
                             <constraint firstItem="ySd-yU-wcE" firstAttribute="trailing" secondItem="yQr-XM-PUF" secondAttribute="trailing" constant="16" id="N1b-hT-bfm"/>
+                            <constraint firstItem="Mv0-y0-zzM" firstAttribute="top" secondItem="yQr-XM-PUF" secondAttribute="bottom" constant="10" id="X43-nA-ZiQ"/>
+                            <constraint firstItem="lNj-GV-o1h" firstAttribute="top" secondItem="cLK-Tn-AOq" secondAttribute="bottom" constant="164" id="mDc-vT-lh0"/>
+                            <constraint firstItem="ySd-yU-wcE" firstAttribute="trailing" secondItem="Mv0-y0-zzM" secondAttribute="trailing" constant="16" id="qpd-Nu-zMg"/>
+                            <constraint firstItem="Mv0-y0-zzM" firstAttribute="leading" secondItem="ySd-yU-wcE" secondAttribute="leading" constant="16" id="rAi-5s-Poc"/>
+                            <constraint firstItem="cLK-Tn-AOq" firstAttribute="top" secondItem="Mv0-y0-zzM" secondAttribute="bottom" constant="10" id="rKq-7E-jiS"/>
                             <constraint firstItem="yQr-XM-PUF" firstAttribute="leading" secondItem="ySd-yU-wcE" secondAttribute="leading" constant="16" id="vQw-LU-JFW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ySd-yU-wcE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Organization" id="eZD-FH-2jL">
+                    <navigationItem key="navigationItem" title="Select Team" id="eZD-FH-2jL">
                         <barButtonItem key="leftBarButtonItem" title="Sign Out" id="Srg-sa-OCU"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="createNewOrganizationButton" destination="Mv0-y0-zzM" id="D5I-j7-hwj"/>
-                        <outlet property="newOrganizationNameContainerView" destination="cLK-Tn-AOq" id="18y-LZ-8CT"/>
-                        <outlet property="nextButton" destination="Nf1-c9-jHY" id="YKH-Yu-cYs"/>
-                        <outlet property="organizationNameTextField" destination="TxI-Ib-g3s" id="bRG-f8-LDi"/>
+                        <outlet property="createNewTeamButton" destination="Mv0-y0-zzM" id="D5I-j7-hwj"/>
+                        <outlet property="newTeamNameContainerView" destination="cLK-Tn-AOq" id="18y-LZ-8CT"/>
                         <outlet property="tableView" destination="4hq-eN-QOx" id="knj-8b-aWb"/>
+                        <outlet property="teamNameTextField" destination="TxI-Ib-g3s" id="bRG-f8-LDi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJ6-4p-FZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1263.2" y="148.87556221889056"/>
         </scene>
-        <!--View Controller-->
+        <!--Event LoaderVC-->
         <scene sceneID="p0n-ss-vnd">
             <objects>
-                <viewController id="eyr-Mw-WQo" sceneMemberID="viewController">
+                <viewController id="eyr-Mw-WQo" customClass="EventLoaderVC" customModule="DanceEventManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Esf-Yc-dDG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Teams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPq-1D-Se6">
+                                <rect key="frame" x="0.0" y="8" width="343" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oht-0t-AYh" userLabel="Events Table Container View">
+                                <rect key="frame" x="16" y="75" width="343" height="189"/>
+                                <color key="backgroundColor" white="0.91377711187214594" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="HEU-Nj-07X"/>
+                                    <constraint firstAttribute="width" constant="343" id="f5v-Tp-oeI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oht-0t-AYh" firstAttribute="top" secondItem="Dne-Ix-nBP" secondAttribute="top" constant="11" id="BXd-tL-ECd"/>
+                            <constraint firstItem="Dne-Ix-nBP" firstAttribute="trailing" secondItem="oht-0t-AYh" secondAttribute="trailing" constant="16" id="OVO-8g-85j"/>
+                            <constraint firstItem="oht-0t-AYh" firstAttribute="leading" secondItem="Dne-Ix-nBP" secondAttribute="leading" constant="16" id="qMY-2S-IcU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dne-Ix-nBP"/>
                     </view>
                 </viewController>
@@ -149,22 +204,22 @@
         <!--Select Event-->
         <scene sceneID="Wsr-6K-TRd">
             <objects>
-                <viewController id="TYP-CZ-Zz6" customClass="EventLoaderVC" customModule="DanceEventManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TYP-CZ-Zz6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dw0-rg-qWh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9i-8X-WQV" userLabel="Organization Code Container View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9i-8X-WQV" userLabel="Team Code Container View">
                                 <rect key="frame" x="0.0" y="64" width="375" height="73"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Organization Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4o-sx-g0C">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4o-sx-g0C">
                                         <rect key="frame" x="16" y="8" width="220" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Trc-tk-3pi" userLabel="Organization Code Text Field">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Trc-tk-3pi" userLabel="Team Code Text Field">
                                         <rect key="frame" x="13" y="38" width="220" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -319,9 +374,9 @@
                         <outlet property="loadEventToolbarButton" destination="XTH-zh-sWe" id="Ko1-0n-gDZ"/>
                         <outlet property="newEventFieldsContainerView" destination="Bn5-Va-gnq" id="5il-Gy-Z9W"/>
                         <outlet property="newEventNameTextField" destination="L2E-u5-2nI" id="c6I-rm-avp"/>
-                        <outlet property="organizationCodeContainerViewHeightConstraint" destination="6nc-O0-QvV" id="hUM-gw-XMB"/>
-                        <outlet property="organizationCodeTextField" destination="Trc-tk-3pi" id="UzQ-nz-ypl"/>
                         <outlet property="startDatePicker" destination="GZB-ra-t2Z" id="dqs-Zt-dKo"/>
+                        <outlet property="teamCodeContainerViewHeightConstraint" destination="6nc-O0-QvV" id="hUM-gw-XMB"/>
+                        <outlet property="teamCodeTextField" destination="Trc-tk-3pi" id="UzQ-nz-ypl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23h-iX-YJx" userLabel="First Responder" sceneMemberID="firstResponder"/>

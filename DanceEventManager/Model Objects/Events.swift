@@ -17,9 +17,11 @@ import AWSDynamoDB
 
 class Events: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
-    @objc var _eventName: String?
-    @objc var _startDate: String?
-    @objc var _endDate: String?
+    var _eventID: String?
+    var _endDate: String?
+    var _startDate: String?
+    var _teamID: String?
+    var _title: String?
     
     class func dynamoDBTableName() -> String {
 
@@ -28,40 +30,35 @@ class Events: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     class func hashKeyAttribute() -> String {
 
-        return "_eventName"
-    }
-    
-    class func rangeKeyAttribute() -> String {
-
-        return "_startDate"
+        return "_eventID"
     }
     
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
         return [
-               "_eventName" : "eventName",
-               "_startDate" : "startDate",
+               "_eventID" : "eventID",
                "_endDate" : "endDate",
+               "_startDate" : "startDate",
+               "_teamID" : "teamID",
+               "_title" : "title",
         ]
-    }
-    
-    func setStartDateWithDateObject(date:Date) {
-        let dateFormatter:DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM dd yyyy"
-        self._startDate = dateFormatter.string(from: date)
-    }
-    
-    func setEndDateWithDateObject(date:Date) {
-        let dateFormatter:DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM dd yyyy"
-        self._endDate = dateFormatter.string(from: date)
     }
     
     func getEventNameWithYear() -> String {
         let dateFormatter:DateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM dd yyyy"
+        dateFormatter.dateFormat = "yyyy"
         let stringToDate:Date = dateFormatter.date(from: self._startDate!)!
-        let yearString:String = "\(Calendar.current.component(.year, from: stringToDate))"
-        let eventNameWithYear:String = "\(self._eventName!) \(yearString)"
-        return eventNameWithYear
+        let dateToString:String = dateFormatter.string(from: stringToDate)
+        return "\(self._title!) \(dateToString)"
+    }
+    func setStartDateWithDateObject(date:Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM dd, yyyy"
+        self._startDate = formatter.string(from: date)
+    }
+    
+    func setEndDateWithDateObject(date:Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM dd, yyyy"
+        self._endDate = formatter.string(from: date)
     }
 }

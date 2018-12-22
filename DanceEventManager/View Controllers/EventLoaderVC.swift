@@ -16,12 +16,14 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     @IBOutlet weak var startDatePicker: UITextField!
     @IBOutlet weak var endDatePicker: UITextField!
     @IBOutlet weak var loadEventToolbarButton: UIBarButtonItem!
-    @IBOutlet weak var organizationCodeTextField: UITextField!
-    @IBOutlet weak var organizationCodeContainerViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var teamCodeTextField: UITextField!
+    @IBOutlet weak var teamCodeContainerViewHeightConstraint: NSLayoutConstraint!
+    
     
     var events:Array<Events>! = []
     var selectedEvent:Events!
     var selectedEventRow:Int = 0
+    var selectedTeam:Teams!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +40,10 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func setUpView() {
-        self.edgesForExtendedLayout = []
-        self.navigationItem.setHidesBackButton(true, animated: false)
-        self.setUpDatePickers()
+//        self.navigationItem.title = self.selectedTeam._teamName
+//        self.setUpDatePickers()
         self.loadEvents()
-        self.populateEventPickerTextField()
+//        self.populateEventPickerTextField()
     }
     
     func loadEvents() {
@@ -196,12 +197,12 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
     }
     
+    // TODO: Ensure date format is consistent!
     private func createNewEventObject() -> Events {
         let newEvent:Events = Events()
-        newEvent._eventName = self.newEventNameTextField.text!
+        newEvent._title = self.newEventNameTextField.text!
         newEvent._startDate = self.startDatePicker.text!
         newEvent._endDate = self.endDatePicker.text!
-        // TODO: Figure out organization codes
         return newEvent
     }
     
@@ -227,7 +228,7 @@ class EventLoaderVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     // MARK: Storage layer interactions
     func executeCreateEventFlow() {
-        StorageManager().dynamoDBObjectMapper.save(self.createNewEventObject(), completionHandler: {(error: Error?) -> Void in
+        StorageManager().objectMapper.save(self.createNewEventObject(), completionHandler: {(error: Error?) -> Void in
             if let error = error {
                 print("DynamoDB Save Error: \(error.localizedDescription)")
                 return
